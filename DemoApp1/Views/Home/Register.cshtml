@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>DemoApp</title>
+    </head>
+    <body style="font-family: Arial; background-color: #f4f4f4;">
+        <h1>Registation of a New Employee </h1>
+
+        <form method="post">
+            <p style="text-align: left;">
+                <b>Your ID: </b>
+                <input type="text" name="employeeid"/>
+            </p>
+
+            <p style="text-align: left;">
+                <b>Your Name: </b>
+                <input type="text" name="employeeName"/>
+            </p>
+             <p style="text-align: left;">
+                <b>Salary: </b>
+                <input type="text" name="Salary"/>
+            </p>
+            <p style="text-align: left;">
+                <b> Department Number: </b>
+                <input type="text" name="DepartmentNo"/>
+            </p>
+            
+            
+          @* <!  <p>
+                <input type="submit" value="Submit"/>
+            </p>!> *@
+            <p>
+            <button onclick="window.location.href='/Home/Index'">Submit</button>
+            </p>
+
+        </form>
+        @* <a href="/Home/Index">Employees Details</a> *@
+    </body>
+</html>

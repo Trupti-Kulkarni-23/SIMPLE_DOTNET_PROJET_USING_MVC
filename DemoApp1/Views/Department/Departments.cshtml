@@ -1,0 +1,35 @@
+@model IEnumerable<Company.Models.Division>
+<html>
+    <head>
+        <title>DemoApp</title>
+    </head>
+    <body> 
+<h1>Department Details</h1>
+        <table border="1">
+            <tr style="background-color: #007bff; color: white;">
+                <th>DepartmentId</th>
+                 <th>DepartmentName</th>
+                 <th>Location</th>
+      
+            </tr>
+            @foreach(var visitor in Model)
+            {
+                <tr style="background-color: #f2f2f2;"> 
+                    <td>@visitor.DeptId</td>
+                    <td>@visitor.DeptName</td>
+                    <td>@visitor.Location</td>
+                  
+                </tr>
+            }
+        </table>
+      <p>
+        <button style="background-color: rgb(164, 111, 107) 123, 255, 0.912); border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">
+        <a href="/Department/RDepartment" 
+        style="color: rgb(16, 1, 1); text-decoration: none; font-weight: bold;">
+        Register a New Department 
+        </a>
+        </button>
+     </p>
+
+    </body>
+</html>
